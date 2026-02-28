@@ -3,5 +3,7 @@
 <style scoped></style>
 
 <template>
-    <h1>Welcome to the Pulse!</h1>
+    <main>
+        <RouterView />
+    </main>
 </template>

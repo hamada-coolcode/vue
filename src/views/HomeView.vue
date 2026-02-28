@@ -1,0 +1,10 @@
+<template>
+    <div>
+        <h1>Home Page</h1>
+        <RouterLink to="/projects">Go to projects.</RouterLink>
+    </div>
+</template>
+
+<style scoped></style>
+
+<script setup lang="ts"></script>

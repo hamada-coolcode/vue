@@ -46,4 +46,5 @@ bun run build
 ```sh
 bun lint
 ```
+
 # vue
