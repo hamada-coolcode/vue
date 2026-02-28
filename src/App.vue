@@ -3,5 +3,5 @@
 <style scoped></style>
 
 <template>
-    <h1>Welcome to Pulse!</h1>
+    <h1>Welcome  to Pulse!</h1>
 </template>
