@@ -7,11 +7,7 @@ import VueRouter from 'unplugin-vue-router/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-    plugins: [
-        vue(),
-        vueDevTools(),
-        VueRouter()
-    ],
+    plugins: [vue(), vueDevTools(), VueRouter()],
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url)),

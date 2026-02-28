@@ -12,10 +12,21 @@
         "lint": "run-s lint:*",
         "lint:oxlint": "oxlint . --fix",
         "lint:eslint": "eslint . --fix --cache",
-        "format": "prettier --write --experimental-cli ."
+        "format": "prettier --write --experimental-cli .",
+        "supabase:init": "supabase init",
+        "supabase:login": "supabase login",
+        "supabase:link": "supabase link --project-ref bpcnjmoazdktztuztzev",
+        "db:migrate:new": "supabase migration new",
+        "db:migrate:up": "supabase migration up --linked",
+        "db:reset": "supabase db reset --linked",
+        "db:seed": "bun ./database/seed.js",
+        "supabase:gen_schema": "supabase gen types typescript --project-id bpcnjmoazdktztuztzev --schema public > database/supabase.ts"
     },
     "dependencies": {
+        "@faker-js/faker": "^10.3.0",
+        "@supabase/supabase-js": "^2.98.0",
         "pinia": "^3.0.4",
+        "supabase": "^2.76.15",
         "vue": "^3.5.29",
         "vue-router": "^5.0.3"
     },
